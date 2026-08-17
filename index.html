@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="club de video">
+    <meta name="keywords" content="peliculas, videos, cine, series">
+    <meta property="og:title" content="club de video">
+
+    <title>Club de Video</title>
+</head>
+<body>
+    <header>
+        <div class="logo" > <!--+ alt shift +a -->
+            <!-- vamos a poder cambiar y demas idkk -->
+            <h1>club de videos</h1>
+        </div>
+        <nav> <!-- dentro del nav va a ver una ul y dentro de eso una li -->
+            <ul>
+                <li><a href="#inicio">Inicio</a></li><!-- a es para enlace el # es para links dentor de essa misma pagina -->
+                <li><a href="#peliculas"> Peliculas</a></li>
+                <li><a href="#actores">Actores</a></li>
+                <li><a href="contactos">contactos</a></li> 
+            </ul>
+        </nav>
+    </header>
+    <!-- etiqueta para el contenido principal e Main -->
+
+    <main>
+        <section id="inicio">
+            <h2>BIENVENIDOS AL CLUB DE VIDEOS</h2>
+            <p>aqui encontraras las mejores peliculas</p>
+            <button>Ver peliculas</button>
+        </section>
+        <section id="peliculas">
+            <h2>peliculas destacadas</h2>
+            <article itemscope itemtype="https://mipagina/movie">
+                <img src="images/disney.jpg" alt="imagen con fondo azul y una cinta de video dentro" itemprop="pelicula animada"> 
+                <!-- para ver si la imagen esta bien ctrl+clic -->
+                 <!-- cuando uses mcrodatos o metadatos todo en i ngles -->
+                 <h3 itemprop="name">AURORA</h3>
+                 <p itemprop="description">la historia de aurora</p>
+                 <span itemprop="Director"> Director: Juans Gonso</span>
+                 <span itemprop="published">Año 2002</span>
+            </article>
+
+
+<!-- COMO PRACTICA HACEMOS 3 ARTICULOSNOSOTROS -->
+
+
+
+            <article itemscope itemtype="https://mipagina/movie">
+                <img src="images/disney.jpg" alt="imagen con fondo azul y una cinta de video dentro" itemprop="pelicula animada"> 
+                <!-- para ver si la imagen esta bien ctrl+clic -->
+                 <!-- cuando uses mcrodatos o metadatos todo en i ngles -->
+                 <h3 itemprop="name">AURORA</h3>
+                 <p itemprop="description">la historia de aurora</p>
+                 <span itemprop="Director"> Director: Juans Gonso</span>
+                 <span itemprop="published">Año 2002</span>
+            </article><article itemscope itemtype="https://mipagina/movie">
+                <img src="images/disney.jpg" alt="imagen con fondo azul y una cinta de video dentro" itemprop="pelicula animada"> 
+                <!-- para ver si la imagen esta bien ctrl+clic -->
+                 <!-- cuando uses mcrodatos o metadatos todo en i ngles -->
+                 <h3 itemprop="name">AURORA</h3>
+                 <p itemprop="description">la historia de aurora</p>
+                 <span itemprop="Director"> Director: Juans Gonso</span>
+                 <span itemprop="published">Año 2002</span>
+            </article><article itemscope itemtype="https://mipagina/movie">
+                <img src="images/disney.jpg" alt="imagen con fondo azul y una cinta de video dentro" itemprop="pelicula animada"> 
+                <!-- para ver si la imagen esta bien ctrl+clic -->
+                 <!-- cuando uses mcrodatos o metadatos todo en i ngles -->
+                 <h3 itemprop="name">AURORA</h3>
+                 <p itemprop="description">la historia de aurora</p>
+                 <span itemprop="Director"> Director: Juans Gonso</span>
+                 <span itemprop="published">Año 2002</span>
+            </article>
+        </section>
+
+        <section id="testimonios">
+            <h2>TESTIMONIOS</h2>
+            <blockquote>
+                "esta seccion tiene as mejores peliculas"
+                <cite>Ana Valle</cite>
+            </blockquote>
+            <blockquote>
+                "best pelisss"
+                <cite>Ania Kawaii</cite>
+            </blockquote>
+        </section>
+
+        <section id="contactos">
+            <h2>CONTACTO</h2>
+            <form action="g" method="POST">
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required minlength="3" >
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" >
+                </div>
+                <div>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" required minlength="15"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="ENVIAR MENSAJE">
+                </div>
+            </form>
+        </section>
+</main>
+</body>
+</html>

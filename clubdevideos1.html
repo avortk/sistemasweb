@@ -6,6 +6,14 @@
     <meta name="description" content="club de video">
     <meta name="keywords" content="peliculas, videos, cine, series">
     <meta property="og:title" content="club de video">
+<!-- ingresar unas nuevas meta que podemos usar -->
+    <meta name="author" content="TECNOLOGIAS WEB I">
+
+    <meta name="geo.placename" content="Bolivia">
+    <meta http-equiv="content-language" content="es">
+
+<!-- EJEMPLOS -->
+
 
     <title>Club de Video</title>
 </head>
@@ -47,33 +55,6 @@
 
 <!-- COMO PRACTICA HACEMOS 3 ARTICULOSNOSOTROS -->
 
-
-
-            <article itemscope itemtype="https://mipagina/movie">
-                <img src="images/disney.jpg" alt="imagen con fondo azul y una cinta de video dentro" itemprop="pelicula animada"> 
-                <!-- para ver si la imagen esta bien ctrl+clic -->
-                 <!-- cuando uses mcrodatos o metadatos todo en i ngles -->
-                 <h3 itemprop="name">AURORA</h3>
-                 <p itemprop="description">la historia de aurora</p>
-                 <span itemprop="Director"> Director: Juans Gonso</span>
-                 <span itemprop="published">Año 2002</span>
-            </article><article itemscope itemtype="https://mipagina/movie">
-                <img src="images/disney.jpg" alt="imagen con fondo azul y una cinta de video dentro" itemprop="pelicula animada"> 
-                <!-- para ver si la imagen esta bien ctrl+clic -->
-                 <!-- cuando uses mcrodatos o metadatos todo en i ngles -->
-                 <h3 itemprop="name">AURORA</h3>
-                 <p itemprop="description">la historia de aurora</p>
-                 <span itemprop="Director"> Director: Juans Gonso</span>
-                 <span itemprop="published">Año 2002</span>
-            </article><article itemscope itemtype="https://mipagina/movie">
-                <img src="images/disney.jpg" alt="imagen con fondo azul y una cinta de video dentro" itemprop="pelicula animada"> 
-                <!-- para ver si la imagen esta bien ctrl+clic -->
-                 <!-- cuando uses mcrodatos o metadatos todo en i ngles -->
-                 <h3 itemprop="name">AURORA</h3>
-                 <p itemprop="description">la historia de aurora</p>
-                 <span itemprop="Director"> Director: Juans Gonso</span>
-                 <span itemprop="published">Año 2002</span>
-            </article>
         </section>
 
         <section id="testimonios">
@@ -106,6 +87,24 @@
                 <div>
                     <input type="submit" value="ENVIAR MENSAJE">
                 </div>
+
+                <div>
+                   <label>Formato preferido</label>
+                        <input type="radio" id="dvd" name="formato" value="dvd">
+                        <label for="dvd">DVD</label>
+                        <input type="radio" id="bluray" name="formato" value="bluray" checked>
+                        <label for="bluray">Blu-ray</label>
+                </div>
+                <div>
+                    <label>Generos</label>
+                        <input type="checkbox" id="accion" name="generos[]" value="accion">
+                        <label for="accion">Accion</label>
+                        <input type="checkbox" id="terror" name="generos[]" value="terror">
+                        <label for="terror">Terror</label>
+                        <input type="checkbox" id="sci-fi" name="generos[]" value="sci-fi">
+                        <label for="sci-fi">Ciencia</label>
+                </div>
+
             </form>
         </section>
 </main>

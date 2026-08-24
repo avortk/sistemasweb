@@ -1,0 +1,284 @@
+:root{
+
+    --color-primary:#003366;
+    --color-primary-light: #004c99;
+    --color-secondary:#ffd700;
+    --color-background: #f4f4f4;
+    --colortext: #333333;
+    --collor-text-light:#666666;
+    --color-white: #fff; /* ffffffff */
+
+    --color-lightblue: #b6d4f3c9;
+
+
+    /* tipos de fuentes */
+    --font-family:'Roboto',arial,sans-serif;
+    --font-size-base:16px;
+    --font-size-large:1.25rem;
+    --font-size-xxl:3.5rem;
+
+/* espaciados */
+    --spacing-small:8px;
+    --spacing-medium:16px;
+    --spacing-large:24px;
+    --spacing-xl:32px;
+    --spacing-xxl:48px;
+
+/*  transiciones */
+
+    --transition-fast: 0.2s ease ;
+    --transition-medium: 0.3 ease;
+
+
+
+
+}
+
+
+*{/* ese * es para selecionar todos los elementos de nuestro index */
+    margin: 0; /* por defecto es de pixeles (px)*/
+    padding: 0;
+    box-sizing: border-box;/* estoe para controlar mas facil el ancho y el alto */
+
+
+}
+
+
+body{
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    color: var(--colortext);
+    background-color: var(--color-background);
+
+
+}
+
+header{
+    display: flex;
+
+
+    /* espaioentre los elemtnots */
+    justify-content: space-between;
+    align-items: center;  /* centrar los elemntos verticalmente */
+
+
+    background-color: var(--color-primary);
+    color: var(--color-white);
+
+    /* s prorud lo fr s rtiueta */
+
+
+}
+
+
+header h1{
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    color: var(--color-white);
+
+}
+
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: var(--spacing-large);
+
+}
+
+nav ul li a{
+    color: var(--color-white);
+    text-decoration: none;
+    padding: var(--spacing-xxl) var(--spacing-medium);
+/* el prmero es arriba y abajo y el segundo es derecha e izuierdas */
+/* si solo tuvieramos un padding se aplica a todo el contorno */
+
+    border-radius: 4px;
+
+
+}
+
+
+nav ul li a:hover{ /* haver es la manito que pasa encima */
+    background-color: rgba(55, 72, 117, 0.938);
+    color: #99b6f7;
+}
+
+#inicio{
+    display: flex;
+    flex-direction: column; /* ste sirve horizonlamente y verticalmente */
+    justify-content: center; /* el justificar nos ayuda a posicionar */
+    align-items: center; 
+    text-align: center;  /* este nos ayuda a centrar e texto */
+    padding: var(--spacing-xxl) var(--spacing-xl);
+
+    min-height: 60vh;
+
+
+    background: linear-gradient(135deg, var(--color-primary), var(--color-lightblue));
+    /* si quieres añadir un degrdado en ese fondo */
+/* usas linear-gradient */
+    color: var(--color-white);
+
+
+}
+
+/* main section h2{
+   PODEMOS USAR ESO OOO
+} */
+
+/* este de aqui */
+
+#inicio h2{
+    font-size: var(--font-size-xxl);
+    font-weight: 700;
+
+
+
+}
+
+#inicio p{
+    font-size: var(--font-size-large);
+}
+
+#inicio a{
+    background-color: #8ab7c9;
+    color: var(--collor-text-light);
+    border-radius: 8px; 
+
+    text-decoration: none; /* para que ya no tenga linea azul */
+
+    font-weight: 700; /* cambiar el ancho es decir negrita */
+    font-size: var(--font-size-large);
+
+    margin: 30px;
+    padding: 60px;
+
+
+
+    transition: all var(--transition-medium);
+    animation: fadein 2s ease-in-out;
+}
+
+
+#inicio a:hover{
+    transform: scale(1.05);
+    box-shadow: var(--colortext);
+    background-color: #bee5f5;
+}
+
+
+#peliculas{
+    padding: var(--spacing-xxl) var(--font-size-xl);
+    background-color: var(--color-white);
+}
+
+#peliculas h2{
+    font-size: var(--font-size-xl);
+    color: var(--color-primary);
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+
+}
+
+
+/* transiciones  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

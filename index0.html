@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club de Videos - Las mejores películas</title>
+    <meta name="description" 
+          content="Club de Videos: Disfruta de las mejores películas, series y documentales. ¡Suscríbete ahora!">
+    <meta name="keywords" 
+          content="películas, series, documentales, cine, entretenimiento, club de videos">
+    <meta name="author" content="Club de Videos">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Club de Videos">
+    <meta property="og:description" 
+          content="Disfruta de las mejores películas, series y documentales.">
+    <meta property="og:image" content="https://clubvideos.com/og-image.jpg">
+    <meta property="og:url" content="https://clubvideos.com">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Club de Videos">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" 
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <h1 style="color:crimson;">🎬 Club de Videos</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#peliculas">Películas</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio"> <!-- toos los ids los vmos  usar en estilos,  -->
+            <h2>Bienvenido al Club de Videos</h2>
+            <p>Descubre las mejores películas, series y documentales.</p>
+            <a href="#peliculas">Explorar Catálogo</a>
+        </section>
+        <section id="peliculas">
+            <h2>Películas Destacadas</h2>
+            <div class="peliculas-grid">
+                <article itemscope itemtype="https://schema.org/Movie">
+                    <img itemprop="image" 
+                         src="assets/images/prueba.jpg" 
+                         alt="Cartel de la película El Padrino">
+                    <h3 itemprop="name">El Padrino</h3>
+                    <p><strong>Director:</strong> <span itemprop="director">Francis Ford Coppola</span></p>
+                    <p><strong>Año:</strong> <span itemprop="datePublished">1972</span></p>
+                    <p itemprop="description">La historia de la familia Corleone en Nueva York.</p>
+                    <p><strong>Calificación:</strong> 
+                        <span itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                            <span itemprop="ratingValue">9.2</span>/10
+                        </span>
+                    </p>
+                </article>
+                <article itemscope itemtype="https://schema.org/Movie">
+                    <img itemprop="image" 
+                         src="assets/images/disney.jpg" 
+                         alt="Cartel de la película Titanic">
+                    <h3 itemprop="name">Titanic</h3>
+                    <p><strong>Director:</strong> <span itemprop="director">James Cameron</span></p>
+                    <p><strong>Año:</strong> <span itemprop="datePublished">1997</span></p>
+                    <p itemprop="description">Una historia de amor en el famoso barco.</p>
+                    <p><strong>Calificación:</strong> 
+                        <span itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                            <span itemprop="ratingValue">8.9</span>/10
+                        </span>
+                    </p>
+                </article>
+                <article itemscope itemtype="https://schema.org/Movie">
+                    <img itemprop="image" 
+                         src="assets/images/prueba.jpg" 
+                         alt="Cartel de la película Inception">
+                    <h3 itemprop="name">Inception</h3>
+                    <p><strong>Director:</strong> <span itemprop="director">Christopher Nolan</span></p>
+                    <p><strong>Año:</strong> <span itemprop="datePublished">2010</span></p>
+                    <p itemprop="description">Un ladrón que roba secretos del subconsciente.</p>
+                    <p><strong>Calificación:</strong> 
+                        <span itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                            <span itemprop="ratingValue">9.0</span>/10
+                        </span>
+                    </p>
+                </article>
+            </div>
+        </section>
+        <section id="testimonios">
+            <h2>Testimonios</h2>
+            <blockquote>
+                "El Club de Videos tiene la mejor colección de películas. ¡Recomendado!"
+            </blockquote>
+            <p>— <strong>Ana Gómez</strong>, usuaria satisfecha</p>
+            
+            <blockquote>
+                "Excelente servicio y variedad de contenido. Muy fácil de usar."
+            </blockquote>
+            <p>— <strong>Carlos López</strong>, usuario frecuente</p>
+        </section>
+        <section id="contacto">
+            <h2>Contáctanos</h2>
+            <form action="/api/contacto" method="POST">
+                <div>
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" 
+                           id="nombre" 
+                           name="nombre" 
+                           required 
+                           minlength="3" 
+                           maxlength="50" 
+                           placeholder="Ej: Juan Pérez">  <!-- se utiliza paa decirle al suaio que tiene que inroducir -->
+                </div>
+                <div>
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" 
+                           id="email" 
+                           name="email" 
+                           required 
+                           placeholder="ejemplo@correo.com">
+                </div>
+                <div>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" 
+                              name="mensaje" 
+                              required 
+                              minlength="10" 
+                              rows="5" 
+                              placeholder="Escribe tu mensaje..."></textarea>
+                </div>
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+    </main>
+    <section id="trailers">
+        <h2>Ver Trailer</h2>
+        <iframe width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/KGW_5fPY6As?si=II7alvJVHbqDwsUa" 
+                title="Trailer de película" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+        </iframe>
+    </section>
+    <footer>
+        <p>&copy; 2026 Club de Videos - Todos los derechos reservados</p>
+        <!-- Enlaces a redes sociales (se estilarán en la Semana 3) -->
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+
+<!-- 
+    <style>
+
+
+
+    </style> -->
+    
+</body>
+</html>

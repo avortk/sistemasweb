@@ -1,4 +1,4 @@
-:root{
+:root{ /* significa donde osotros que cada vvalor o variabe uqe hayamos typeado  */
 
     --color-primary:#003366;
     --color-primary-light: #004c99;
@@ -45,16 +45,16 @@
 
 
 body{
-    font-family: var(--font-family);
+    font-family: var(--font-family); /* EL VAR SE USA PARA LLAMAR A LA VARIABLE  */
     font-size: var(--font-size-base);
-    color: var(--colortext);
+    color: var(--colortext);  /* el atributo color para cmbiar el coo e texto */
     background-color: var(--color-background);
 
 
 }
 
 header{
-    display: flex;
+    display: flex; /* la caracteristica del flex es uqe solo es una sola direccion */
 
 
     /* espaioentre los elemtnots */
@@ -71,7 +71,7 @@ header{
 }
 
 
-header h1{
+header h1{ /* cuando hay un espacio entre osea el header tiene ___ y ya la cosa es que sleccionamos  */
     font-size: var(--font-size-xl);
     font-weight: 700;
     color: var(--color-white);
@@ -82,11 +82,11 @@ header h1{
 nav ul{
     display: flex;
     list-style: none;
-    gap: var(--spacing-large);
+    gap: var(--spacing-large); /* GAP es el espacio entre dos idk xdd */
 
 }
 
-nav ul li a{
+nav ul li a{  
     color: var(--color-white);
     text-decoration: none;
     padding: var(--spacing-xxl) var(--spacing-medium);
@@ -94,13 +94,13 @@ nav ul li a{
 /* si solo tuvieramos un padding se aplica a todo el contorno */
 
     border-radius: 4px;
-
+    transition: all var(--transition-fast);
 
 }
 
 
 nav ul li a:hover{ /* haver es la manito que pasa encima */
-    background-color: rgba(55, 72, 117, 0.938);
+    background-color: rgba(55, 72, 117, 0.2);  /* el utimo de 0.000 es la transparencia solo va de 0 a 1 */
     color: #99b6f7;
 }
 
@@ -161,31 +161,485 @@ nav ul li a:hover{ /* haver es la manito que pasa encima */
 }
 
 
-#inicio a:hover{
-    transform: scale(1.05);
-    box-shadow: var(--colortext);
-    background-color: #bee5f5;
+#inicio a:hover {
+
+    transform: scale(1.05); /* cuando pase sobre el enlace lo agranda */
+
+    box-shadow: var(--shadow-medium);  /* cuando pasmos se le va a daruna sombra a es caja  */
+
+    background-color: #ffed4a;
 }
 
+#peliculas {
 
-#peliculas{
-    padding: var(--spacing-xxl) var(--font-size-xl);
+    padding: var(--spacing-xxl) var(--spacing-xl);
+
     background-color: var(--color-white);
 }
 
-#peliculas h2{
-    font-size: var(--font-size-xl);
-    color: var(--color-primary);
-    text-align: center;
-    margin-bottom: var(--spacing-xl);
+#peliculas h2 {
 
+    font-size: var(--font-size-xl);
+
+    color: var(--color-primary);
+
+    text-align: center;
+
+    margin-bottom: var(--spacing-xl);
 }
 
+.peliculas-grid {  /* a la clas guion peliculas rid  */
 
-/* transiciones  */
+    display: flex;
 
+    flex-wrap: wrap;
 
+    justify-content: center;
 
+    gap: var(--spacing-large);
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+}
+
+.peliculas-grid article {
+
+    display: flex;
+
+    flex-direction: column;
+
+    flex: 1;
+
+    min-width: 250px;
+
+    max-width: 300px;
+
+    background-color: var(--color-white);
+
+    border-radius: 12px;
+
+    box-shadow: var(--shadow-medium);
+
+    overflow: hidden;
+
+    transition: all var(--transition-medium);
+}
+
+.peliculas-grid article:hover { /* aquello lase grid pero solo cuano sean elemtnos articul y se pase sobre ellos */
+
+    transform: translateY(-8px); /*  hacia arroba son -8 pixeles  */
+
+    box-shadow: var(--shadow-hover);
+}
+
+.peliculas-grid article img {
+
+    width: 100%;
+
+    height: 300px;
+
+    object-fit: cover;
+
+    object-position: center;
+}
+
+.peliculas-grid article h3 {
+
+    font-size: var(--font-size-large);
+
+    color: var(--color-primary);
+
+    padding: var(--spacing-medium) var(--spacing-medium) var(--spacing-small);
+}
+
+.peliculas-grid article p {
+
+    color: var(--color-text-light);
+
+    padding: 0 var(--spacing-medium) var(--spacing-small);
+
+    font-size: 0.9rem;
+}
+
+#testimonios {
+
+    padding: var(--spacing-xxl) var(--spacing-xl);
+
+    background-color: var(--color-background);
+
+    text-align: center;
+}
+
+#testimonios h2 {
+
+    font-size: var(--font-size-xl);
+
+    color: var(--color-primary);
+
+    margin-bottom: var(--spacing-xl);
+}
+
+#testimonios blockquote { /*  dnde el id tenga testmnio de los bloquee */
+
+    font-size: var(--font-size-large);
+
+    font-style: italic;
+
+    max-width: 700px;
+
+    margin: 0 auto var(--spacing-medium);
+
+    padding: var(--spacing-medium);
+
+    border-left: 4px solid var(--color-secondary);
+
+    background-color: var(--color-white);
+
+    border-radius: 8px;
+
+    box-shadow: var(--shadow-small);
+}
+
+#contacto {
+
+    padding: var(--spacing-xxl) var(--spacing-xl);
+
+    background-color: var(--color-white);
+}
+
+#contacto h2 {
+
+    font-size: var(--font-size-xl);
+
+    color: var(--color-primary);
+
+    text-align: center;
+
+    margin-bottom: var(--spacing-xl);
+}
+
+form {
+
+    max-width: 600px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: var(--spacing-medium);
+}
+
+form input,   /* cuando escribimos dentro del formulario y en las areas de texto */
+form textarea {
+
+    padding: var(--spacing-medium);
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    font-size: var(--font-size-base);
+
+    font-family: var(--font-family);
+
+    transition: border-color var(--transition-fast);
+}
+
+form input:focus, /*  el focus es una seudoclase la cual hace que el text bx tilde o parpadea cuando acercamos el curspr */
+form textarea:focus {
+
+    outline: none;
+
+    border-color: var(--color-primary);
+
+    box-shadow: 0 0 0 3px rgba(0, 51, 102, 0.2);
+}
+
+form textarea {
+
+    resize: vertical;
+
+    min-height: 120px;
+}
+
+form button {
+
+    background-color: var(--color-primary);
+
+    color: var(--color-white);
+
+    padding: var(--spacing-medium);
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-weight: 700;
+
+    font-size: var(--font-size-large);
+
+    cursor: pointer;  /* es para darle un cambio al boton de color menos brusco */
+
+    transition: all var(--transition-medium);
+}
+
+form button:hover {
+
+    background-color: var(--color-secondary);
+
+    color: var(--color-text);
+
+    transform: scale(1.02);
+
+    box-shadow: var(--shadow-medium);
+}
+
+#trailers {
+
+    padding: var(--spacing-xxl) var(--spacing-xl);
+
+    text-align: center;
+
+    background-color: var(--color-background);
+}
+
+#trailers h2 {
+
+    font-size: var(--font-size-xl);
+
+    color: var(--color-primary);
+
+    margin-bottom: var(--spacing-xl);
+}
+
+#trailers iframe {
+
+    max-width: 100%;
+
+    border-radius: 12px;
+
+    box-shadow: var(--shadow-medium);
+}
+
+footer {
+
+    background-color: var(--color-primary);
+
+    color: var(--color-white);
+
+    padding: var(--spacing-large) var(--spacing-xl);
+
+    text-align: center;
+}
+
+footer p {
+
+    font-size: 0.9rem;
+
+    opacity: 0.8;
+
+    margin-bottom: var(--spacing-medium);
+}
+
+footer .social-links {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: var(--spacing-large);
+}
+
+footer .social-links a {
+
+    color: var(--color-white);
+
+    text-decoration: none;
+
+    padding: var(--spacing-small) var(--spacing-medium);
+
+    border-radius: 4px;
+
+    transition: all var(--transition-fast);
+}
+
+footer .social-links a:hover {
+
+    background-color: rgba(255, 255, 255, 0.1);
+
+    color: var(--color-secondary);
+}
+
+@media (min-width: 768px) {   /* este es para el tamaño de como lo va a ver el dispositivo, se va a atasnformar en el ancho que le designamos  */
+
+    #inicio {
+        min-height: 50vh;
+
+        padding: var(--spacing-xxl) var(--spacing-xxl);
+    }
+
+    #inicio h2 {
+        font-size: 3rem;
+    }
+
+    .peliculas-grid {
+
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: var(--spacing-large);
+    }
+
+    .peliculas-grid article {
+
+        min-width: 0;
+
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    #inicio {
+        min-height: 70vh;
+    }
+
+    #inicio h2 {
+        font-size: var(--font-size-xxl);
+    }
+
+    .peliculas-grid {
+
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+
+    header {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: var(--spacing-medium);
+    }
+
+    header h1 {
+
+        font-size: var(--font-size-large);
+
+        margin-bottom: var(--spacing-small);
+    }
+
+    nav ul {
+
+        flex-direction: column;
+
+        gap: var(--spacing-small);
+    }
+
+    nav ul li a {
+
+        display: block;
+
+        padding: var(--spacing-small);
+    }
+
+    #inicio {
+
+        padding: var(--spacing-large);
+
+        min-height: 40vh;
+    }
+
+    #inicio h2 {
+        font-size: var(--font-size-xl);
+    }
+
+    #inicio p {
+        font-size: var(--font-size-base);
+    }
+
+    #inicio a {
+        padding: var(--spacing-small) var(--spacing-large);
+        font-size: var(--font-size-base);
+    }
+
+    .peliculas-grid {
+
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .peliculas-grid article {
+
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .peliculas-grid article img {
+        height: 200px;
+    }
+
+    #trailers iframe {
+        height: 200px;
+    }
+}
+
+@keyframes fadeIn {
+
+    0% {
+
+        opacity: 0;
+
+        transform: translateY(-20px);
+    }
+
+    100% {
+
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+
+    0% {
+
+        opacity: 0;
+
+        transform: translateX(-50px);
+    }
+
+    100% {
+
+        opacity: 1;
+
+        transform: translateX(0);
+    }
+}
+
+.peliculas-grid article:nth-child(1) {
+
+    animation: fadeIn 0.5s ease-out;
+}
+
+.peliculas-grid article:nth-child(2) {
+
+    animation: fadeIn 0.7s ease-out;
+}
+
+.peliculas-grid article:nth-child(3) {
+
+    animation: fadeIn 0.9s ease-out;
+}
 
 
 

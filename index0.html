@@ -25,84 +25,97 @@
 
 </head>
 <body>
-    <header>
-        <h1 style="color:crimson;">🎬 Club de Videos</h1>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#peliculas">Películas</a></li>
-                <li><a href="#testimonios">Testimonios</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+    <header class="header">
+        <h1 class="header__logo" style="color:crimson;">🎬 Club de Videos</h1>
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li><a class="header__link" href="#inicio">Inicio</a></li>
+                <li><a class="header__link" href="#peliculas">Películas</a></li>
+                <li><a class="header__link" href="#testimonios">Testimonios</a></li>
+                <li><a class="header__link" href="#contacto">Contacto</a></li>  <!--  ALT Y SELECIONAS CON EL CURSOR PAR AAGARRAR DE 4 EN 4 O MAS  -->
             </ul>
+            <BUTton class="header__toggle"> <!-- TO DO -->
+                tema
+            </BUTton>
         </nav>
     </header>
     <main>
-        <section id="inicio"> <!-- toos los ids los vmos  usar en estilos,  -->
-            <h2>Bienvenido al Club de Videos</h2>
-            <p>Descubre las mejores películas, series y documentales.</p>
-            <a href="#peliculas">Explorar Catálogo</a>
+        <section id="inicio" class="hero"> <!-- toos los ids los vmos  usar en estilos,  -->   <!-- el hero es para lo primero que ve el usuario  -->
+            <h2 class="hero__title">Bienvenido al Club de Videos</h2>
+            <p class="hero__subtitle">Descubre las mejores películas, series y documentales.</p>
+            <a href="#peliculas "  class="hero__cta">Explorar Catálogo</a>
         </section>
-        <section id="peliculas">
-            <h2>Películas Destacadas</h2>
-            <div class="peliculas-grid">
-                <article itemscope itemtype="https://schema.org/Movie">
-                    <img itemprop="image" 
+        <section id="peliculas" class="cards">
+            <h2 class="cards__title">Películas Destacadas</h2>
+            <div class="cards__grid"> <!-- reemplao de '-' por '__'-->
+                <article class="cards__card--featured" itemscope itemtype="https://schema.org/Movie">
+
+                    <!--  no se puede declarar dond lases en la misma etiqueta si no es separarlas con un espaciom -->
+
+
+                    <img itemprop="image" class="cards__image"
                          src="assets/images/prueba.jpg" 
                          alt="Cartel de la película El Padrino">
-                    <h3 itemprop="name">El Padrino</h3>
-                    <p><strong>Director:</strong> <span itemprop="director">Francis Ford Coppola</span></p>
-                    <p><strong>Año:</strong> <span itemprop="datePublished">1972</span></p>
-                    <p itemprop="description">La historia de la familia Corleone en Nueva York.</p>
-                    <p><strong>Calificación:</strong> 
+                    <h3 itemprop="name" class="cards__title">El Padrino</h3>
+                    <p class = "cards__director"><strong>Director:</strong> <span itemprop="director">Francis Ford Coppola</span></p>
+                    <p class="cards__year"><strong>Año:</strong> <span itemprop="datePublished">1972</span></p>
+                    <p class="cards__description" itemprop="description">La historia de la familia Corleone en Nueva York.</p>
+                    <p class ="cards__rating"><strong>Calificación:</strong> 
                         <span itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
                             <span itemprop="ratingValue">9.2</span>/10
                         </span>
-                    </p>
+                    </p> 
+                    <button class="cards__button">ver mas</button>
+
                 </article>
-                <article itemscope itemtype="https://schema.org/Movie">
-                    <img itemprop="image" 
+                <article class="cards__card--featured" itemscope itemtype="https://schema.org/Movie">
+                    <img itemprop="image" class="cards__image"
                          src="assets/images/disney.jpg" 
                          alt="Cartel de la película Titanic">
-                    <h3 itemprop="name">Titanic</h3>
-                    <p><strong>Director:</strong> <span itemprop="director">James Cameron</span></p>
-                    <p><strong>Año:</strong> <span itemprop="datePublished">1997</span></p>
-                    <p itemprop="description">Una historia de amor en el famoso barco.</p>
-                    <p><strong>Calificación:</strong> 
+                    <h3 itemprop="name"  class="cards__title">Titanic</h3>
+                    <p class = "cards__director"><strong>Director:</strong> <span itemprop="director">James Cameron</span></p>
+                    <p class="cards__year"><strong>Año:</strong> <span itemprop="datePublished">1997</span></p>
+                    <p class="cards__description" itemprop="description">Una historia de amor en el famoso barco.</p>
+                    <p class ="cards__rating"><strong>Calificación:</strong> 
                         <span itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
                             <span itemprop="ratingValue">8.9</span>/10
                         </span>
                     </p>
+<button class="cards__button">ver mas</button> <!-- TO DO -->
+
                 </article>
-                <article itemscope itemtype="https://schema.org/Movie">
-                    <img itemprop="image" 
+                <article class="cards__card--featured" itemscope itemtype="https://schema.org/Movie">
+                    <img itemprop="image" class="cards__image"
                          src="assets/images/prueba.jpg" 
                          alt="Cartel de la película Inception">
-                    <h3 itemprop="name">Inception</h3>
-                    <p><strong>Director:</strong> <span itemprop="director">Christopher Nolan</span></p>
-                    <p><strong>Año:</strong> <span itemprop="datePublished">2010</span></p>
-                    <p itemprop="description">Un ladrón que roba secretos del subconsciente.</p>
-                    <p><strong>Calificación:</strong> 
+                    <h3 class="cards__title" itemprop="name">Inception<h3>
+                    <p class = "cards__director"> <strong>Director:</strong> <span itemprop="director">Christopher Nolan</span></p>
+                    <p class="cards__year"><strong>Año:</strong> <span itemprop="datePublished">2010</span></p>
+                    <p class="cards__description" itemprop="description">Un ladrón que roba secretos del subconsciente.</p>
+                    <p class ="cards__rating"><strong>Calificación:</strong> 
                         <span itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
                             <span itemprop="ratingValue">9.0</span>/10
                         </span>
                     </p>
+<button class="cards__button">ver mas</button>
+
                 </article>
             </div>
         </section>
-        <section id="testimonios">
-            <h2>Testimonios</h2>
-            <blockquote>
+        <section class = "testimonials" id="testimonios">
+            <h2 class = "testimonials__title" >Testimonios</h2>
+            <blockquote class = "testimonials__quote"> <!-- to dooo -->
                 "El Club de Videos tiene la mejor colección de películas. ¡Recomendado!"
             </blockquote>
             <p>— <strong>Ana Gómez</strong>, usuaria satisfecha</p>
             
-            <blockquote>
+            <blockquote class = "testimonials__quote">
                 "Excelente servicio y variedad de contenido. Muy fácil de usar."
             </blockquote>
             <p>— <strong>Carlos López</strong>, usuario frecuente</p>
         </section>
-        <section id="contacto">
-            <h2>Contáctanos</h2>
+        <section class = "testimonials" id="contacto">
+            <h2 class = "testimonials__title" >Contáctanos</h2>
             <form action="/api/contacto" method="POST">
                 <div>
                     <label for="nombre">Nombre completo:</label>
@@ -137,14 +150,10 @@
     </main>
     <section id="trailers">
         <h2>Ver Trailer</h2>
-        <iframe width="560" 
-                height="315" 
-                src="https://www.youtube.com/embed/KGW_5fPY6As?si=II7alvJVHbqDwsUa" 
-                title="Trailer de película" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
-        </iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/5o8dW_vJo8I?si=FPV9OXhfkGNAEWcI&amp;start=3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+        <!-- alt + z para poner todo en la pantalla completa asi en reglones -->
     </section>
     <footer>
         <p>&copy; 2026 Club de Videos - Todos los derechos reservados</p>

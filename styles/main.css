@@ -1,0 +1,8 @@
+/*  este va a centraliar los otros archivos que vayamos creando  */
+
+
+@import ' base/variables.css';  /*  todos los estilos que vaya a utilizar siempre en cmoilla simple ' ' */
+
+@import 'components/header.css';
+
+

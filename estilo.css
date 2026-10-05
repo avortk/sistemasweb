@@ -1,0 +1,60 @@
+:root{
+    --color-primary: #ff0000 ;
+    --color-secondary: #ff4040;
+    --font-family: 'Times News Roman', Roboto ;
+}
+
+html{
+    background-color: var(--color-secondary);
+    font-family: var(--font-family);
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    font-size: large;
+}
+
+a:hover{
+    padding: 10px;
+    text-decoration: none;
+    color: var(--color-secondary);
+    list-style: none;
+    background-color: var(--color-primary);
+    font-size: x-large;
+}
+
+ul{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 40px;
+        justify-content: center;
+}
+
+
+header{
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 20px;
+    font-size: large;
+    justify-content: center;
+    
+}
+
+
+.formulario{
+    background-color: aliceblue;
+}
+
+
+@media (prefers-color-scheme: dark){
+    :root {
+         --color-primary: #4c00ff ;
+    --color-secondary: #8eb5f7;
+    }
+}
+
